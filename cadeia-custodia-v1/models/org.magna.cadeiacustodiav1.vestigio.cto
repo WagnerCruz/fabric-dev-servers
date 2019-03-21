@@ -1,0 +1,44 @@
+/*
+
+*/
+
+namespace org.magna.cadeiacustodiav1.vestigio
+
+asset vestigios identified by idvestigios {
+  o String idvestigios
+  o String requisicao
+  o String numBO
+  o DateTime dataEvento
+  o String Cedente
+  o String Receptor
+  o String TipoOcorrencia
+  o String NumLacre regex=/[A-Z][A-Z][0-9][0-9][0-9]/
+  o String TipoVestigio
+  o String descricao
+  o estado status default="COLETADO"
+
+}
+
+enum estado{
+  o COLETADO
+  o PROCESSAMENTO
+  o EVIDENCIA
+  o ENVIADO_POLICIACIVIL 
+  o ENVIADO_LABORATORIO
+  o ENVIADO_JUIZ
+  o DESCARTE
+}
+
+transaction AtualizaVestigio {
+  o String idVestigio
+  o String requisicao
+  o String numBO
+  o DateTime dataEvento
+  o String Cedente
+  o String Receptor
+  o String TipoOcorrencia
+  o String NumLacre regex=/[A-Z][A-Z][0-9][0-9][0-9]/
+  o String TipoVestigio
+  o String descricao
+  o String status
+}
