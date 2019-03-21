@@ -15,8 +15,8 @@
 function addFlight(registry){
     const  bnDef = bnUtil.connection.getBusinessNetwork();
     const  factory = bnDef.getFactory();
-    let    flightResource = factory.newResource(aircraftNamespace,aircraftType,'AE201-05-05-2020');
-    flightResource.setPropertyValue('flightNumber','AE101');
+    let    flightResource = factory.newResource(aircraftNamespace,aircraftType,'AE301-05-05-2020');
+    flightResource.setPropertyValue('flightNumber','AE301');
     flightResource.route = factory.newConcept(aircraftNamespace,'Route');
     flightResource.route.setPropertyValue('origin', 'EWR');
     flightResource.route.setPropertyValue('destination' , 'ATL');
