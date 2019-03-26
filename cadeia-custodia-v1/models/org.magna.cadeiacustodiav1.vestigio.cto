@@ -4,18 +4,18 @@
 
 namespace org.magna.cadeiacustodiav1.vestigio
 
+
 asset vestigios identified by idvestigios {
   o String idvestigios
-  o String requisicao
-  o String numBO
-  o DateTime dataEvento
-  o String Cedente
-  o String Receptor
-  o String TipoOcorrencia
-  o String NumLacre regex=/[A-Z][A-Z][0-9][0-9][0-9]/
-  o String TipoVestigio
-  o String descricao
-  o estado status default="COLETADO"
+  o String respColeta
+  o String tipoVestigio
+  o String descVestigio
+  o String estadoVestigio
+  o String localColeta
+  o String condArmaz
+  o String numLacre
+  o DateTime dataColeta
+  o estado status default='COLETADO'
 
 }
 
@@ -29,16 +29,10 @@ enum estado{
   o DESCARTE
 }
 
-transaction AtualizaVestigio {
-  o String idVestigio
-  o String requisicao
+asset Requisicao identified by idrequisicao {
+  o String idrequisicao
   o String numBO
-  o DateTime dataEvento
-  o String Cedente
-  o String Receptor
+  o String NomeCedente
+  o String NomeReceptor
   o String TipoOcorrencia
-  o String NumLacre regex=/[A-Z][A-Z][0-9][0-9][0-9]/
-  o String TipoVestigio
-  o String descricao
-  o String status
 }

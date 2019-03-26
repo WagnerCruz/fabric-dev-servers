@@ -1,5 +1,5 @@
 /**
- * @param {org.magna.cadeiacustodiav1.vestigio.AtualizaVestigio} dadosvestigio
+ * @param {org.magna.cadeiacustodiav1.transactions.AtualizaVestigio} dadosvestigio
  * @transaction
  * 
  * 
@@ -30,4 +30,27 @@
 
             return setvestigio.add(vestigio);
         });
+ }
+
+ function gravaRequisicao(dadosvestigio){
+     return getAssetRegistry('')
+        .then(function(setRequisicao){
+            var factory = getFactory();
+            var NS = 'org.magna.cadeiacustodiav1.vestigio';
+            var requisicao = factory.newResource(NS,'idrequisicao', dadosvestigio.idRequisicao);
+            requisicao.idRequisicao = dadosvestigio.idRequisicao;
+            requisicao.numBO = dadosvestigio.numBO;
+            requisicao.NomeCedente = dadosvestigio.NomeCedente;
+            requisicao.NomeReceptor = dadosvestigio.NomeReceptor;
+            requisicao.TipoOcorrencia = dadosvestigio.TipoOcorrencia;
+
+            var event = factory.newEvent(NS,'Requisição gravada');
+            event.idRequisicao = dadosvestigio.idRequisicao;
+            emit(event);
+
+            return setRequisicao.add(requisicao);
+
+
+        });
+
  }
