@@ -26,7 +26,7 @@ if [ ! -z $ORDERER_ADDRESS ]; then
     echo "Using the Orderer=$ORDERER_ADDRESS"
 else
 echo "Setting the Orderer to localhost:7050"
-    ORDERER_ADDRESS="localhost:7050"
+    ORDERER_ADDRESS="localhost:8050"
 fi
 
 

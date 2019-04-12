@@ -1,0 +1,171 @@
+[34m2019-04-11 15:26:40.518 -03 [nodeCmd] serve -> INFO 001[0m Starting peer:
+ Version: 1.4.0
+ Commit SHA: d700b43
+ Go version: go1.11.1
+ OS/Arch: linux/amd64
+ Chaincode:
+  Base Image Version: 0.4.14
+  Base Docker Namespace: hyperledger
+  Base Docker Label: org.hyperledger.fabric
+  Docker Namespace: hyperledger
+[33m2019-04-11 15:26:40.518 -03 [peer.operations] initializeMetricsProvider -> WARN 002[0m Unknown provider type: ; metrics disabled
+[34m2019-04-11 15:26:40.519 -03 [ledgermgmt] initialize -> INFO 003[0m Initializing ledger mgmt
+[34m2019-04-11 15:26:40.519 -03 [kvledger] NewProvider -> INFO 004[0m Initializing ledger provider
+[34m2019-04-11 15:26:40.587 -03 [kvledger] NewProvider -> INFO 005[0m ledger provider Initialized
+[34m2019-04-11 15:26:40.644 -03 [ledgermgmt] initialize -> INFO 006[0m ledger mgmt initialized
+[34m2019-04-11 15:26:40.644 -03 [peer] func1 -> INFO 007[0m Auto-detected peer address: 192.168.141.21:8051
+[34m2019-04-11 15:26:40.644 -03 [peer] func1 -> INFO 008[0m Host is 0.0.0.0 , falling back to auto-detected address: 192.168.141.21:8051
+[34m2019-04-11 15:26:40.644 -03 [peer] func1 -> INFO 009[0m Auto-detected peer address: 192.168.141.21:8051
+[34m2019-04-11 15:26:40.644 -03 [peer] func1 -> INFO 00a[0m Host is 0.0.0.0 , falling back to auto-detected address: 192.168.141.21:8051
+[34m2019-04-11 15:26:40.646 -03 [nodeCmd] computeChaincodeEndpoint -> INFO 00b[0m Entering computeChaincodeEndpoint with peerHostname: 192.168.141.21
+[34m2019-04-11 15:26:40.646 -03 [nodeCmd] computeChaincodeEndpoint -> INFO 00c[0m Exit with ccEndpoint: 192.168.141.21:8052
+[34m2019-04-11 15:26:40.647 -03 [sccapi] registerSysCC -> INFO 00d[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[34m2019-04-11 15:26:40.647 -03 [sccapi] registerSysCC -> INFO 00e[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[34m2019-04-11 15:26:40.647 -03 [sccapi] registerSysCC -> INFO 00f[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[34m2019-04-11 15:26:40.647 -03 [sccapi] registerSysCC -> INFO 010[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle,true) disabled
+[34m2019-04-11 15:26:40.650 -03 [gossip.service] func1 -> INFO 011[0m Initialize gossip with endpoint 192.168.141.21:8051 and bootstrap set [127.0.0.1:7051]
+[34m2019-04-11 15:26:40.657 -03 [gossip.gossip] NewGossipService -> INFO 012[0m Creating gossip service with self membership of Endpoint: 0.0.0.0:7051, InternalEndpoint: 192.168.141.21:8051, PKI-ID: 1b07f63b98e69a943eccd5dfbf5a9146140ce848d4ad03a2f69cd2f01e3013a9, Metadata: 
+[34m2019-04-11 15:26:40.660 -03 [gossip.gossip] start -> INFO 013[0m Gossip instance 192.168.141.21:8051 started
+[34m2019-04-11 15:26:40.661 -03 [sccapi] deploySysCC -> INFO 014[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[34m2019-04-11 15:26:40.661 -03 [cscc] Init -> INFO 015[0m Init CSCC
+[34m2019-04-11 15:26:40.661 -03 [sccapi] deploySysCC -> INFO 016[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[34m2019-04-11 15:26:40.661 -03 [qscc] Init -> INFO 017[0m Init QSCC
+[34m2019-04-11 15:26:40.662 -03 [sccapi] deploySysCC -> INFO 018[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[34m2019-04-11 15:26:40.662 -03 [sccapi] deploySysCC -> INFO 019[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[34m2019-04-11 15:26:40.662 -03 [nodeCmd] serve -> INFO 01a[0m Deployed system chaincodes
+[34m2019-04-11 15:26:40.663 -03 [discovery] NewService -> INFO 01b[0m Created with config TLS: false, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[34m2019-04-11 15:26:40.663 -03 [nodeCmd] registerDiscoveryService -> INFO 01c[0m Discovery service activated
+[34m2019-04-11 15:26:40.663 -03 [nodeCmd] serve -> INFO 01d[0m Starting peer with ID=[name:"acme-peer2" ], network ID=[dev], address=[192.168.141.21:8051]
+[34m2019-04-11 15:26:40.672 -03 [nodeCmd] serve -> INFO 01e[0m Started peer with ID=[name:"acme-peer2" ], network ID=[dev], address=[192.168.141.21:8051]
+[34m2019-04-11 15:27:15.560 -03 [endorser] callChaincode -> INFO 01f[0m [][0f4c1590] Entry chaincode: name:"cscc" 
+[34m2019-04-11 15:27:15.561 -03 [ledgermgmt] CreateLedger -> INFO 020[0m Creating ledger [airlinechannel] with genesis block
+[34m2019-04-11 15:27:15.563 -03 [fsblkstorage] newBlockfileMgr -> INFO 021[0m Getting block information from block storage
+[34m2019-04-11 15:27:15.636 -03 [kvledger] CommitWithPvtData -> INFO 022[0m [airlinechannel] Committed block [0] with 1 transaction(s) in 54ms (state_validation=1ms block_commit=34ms state_commit=9ms)
+[34m2019-04-11 15:27:15.645 -03 [ledgermgmt] CreateLedger -> INFO 023[0m Created ledger [airlinechannel] with genesis block
+[34m2019-04-11 15:27:15.651 -03 [gossip.gossip] JoinChan -> INFO 024[0m Joining gossip network of channel airlinechannel with 2 organizations
+[34m2019-04-11 15:27:15.651 -03 [gossip.gossip] learnAnchorPeers -> INFO 025[0m No configured anchor peers of BudgetMSP for channel airlinechannel to learn about
+[34m2019-04-11 15:27:15.651 -03 [gossip.gossip] learnAnchorPeers -> INFO 026[0m No configured anchor peers of AcmeMSP for channel airlinechannel to learn about
+[33m2019-04-11 15:27:15.666 -03 [gossip.privdata] GetReconcilerConfig -> WARN 027[0m Configuration key peer.gossip.pvtData.reconcileSleepInterval isn't set, defaulting to 1m0s
+[33m2019-04-11 15:27:15.666 -03 [gossip.privdata] GetReconcilerConfig -> WARN 028[0m Configuration key peer.gossip.pvtData.reconcileBatchSize isn't set, defaulting to 10
+[34m2019-04-11 15:27:15.667 -03 [gossip.state] NewGossipStateProvider -> INFO 029[0m Updating metadata information, current ledger sequence is at = 0, next expected block is = 1
+[34m2019-04-11 15:27:15.668 -03 [sccapi] deploySysCC -> INFO 02a[0m system chaincode lscc/airlinechannel(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[34m2019-04-11 15:27:15.668 -03 [cscc] Init -> INFO 02b[0m Init CSCC
+[34m2019-04-11 15:27:15.668 -03 [sccapi] deploySysCC -> INFO 02c[0m system chaincode cscc/airlinechannel(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[34m2019-04-11 15:27:15.669 -03 [qscc] Init -> INFO 02d[0m Init QSCC
+[34m2019-04-11 15:27:15.669 -03 [sccapi] deploySysCC -> INFO 02e[0m system chaincode qscc/airlinechannel(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[34m2019-04-11 15:27:15.669 -03 [sccapi] deploySysCC -> INFO 02f[0m system chaincode (+lifecycle,github.com/hyperledger/fabric/core/chaincode/lifecycle) disabled
+[34m2019-04-11 15:27:15.669 -03 [endorser] callChaincode -> INFO 030[0m [][0f4c1590] Exit chaincode: name:"cscc"  (109ms)
+[34m2019-04-11 15:27:15.669 -03 [comm.grpc.server] 1 -> INFO 031[0m unary call completed {"grpc.start_time": "2019-04-11T15:27:15.558-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56866", "grpc.code": "OK", "grpc.call_duration": "111.167654ms"}
+[34m2019-04-11 15:27:20.651 -03 [gossip.channel] reportMembershipChanges -> INFO 032[0m Membership view has changed. peers went online:  [[0.0.0.0:7051 192.168.141.21:7051]] , current view:  [[0.0.0.0:7051 192.168.141.21:7051]]
+[34m2019-04-11 15:27:20.760 -03 [gossip.election] leaderElection -> INFO 033[0m 1b07f63b98e69a943eccd5dfbf5a9146140ce848d4ad03a2f69cd2f01e3013a9 : Some peer is already a leader
+[34m2019-04-11 15:27:25.131 -03 [endorser] callChaincode -> INFO 034[0m [][67b44172] Entry chaincode: name:"cscc" 
+[34m2019-04-11 15:27:25.132 -03 [endorser] callChaincode -> INFO 035[0m [][67b44172] Exit chaincode: name:"cscc"  (1ms)
+[34m2019-04-11 15:27:25.132 -03 [comm.grpc.server] 1 -> INFO 036[0m unary call completed {"grpc.start_time": "2019-04-11T15:27:25.13-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56868", "grpc.code": "OK", "grpc.call_duration": "1.359674ms"}
+[34m2019-04-11 15:27:25.671 -03 [gossip.privdata] StoreBlock -> INFO 037[0m [airlinechannel] Received block [1] from buffer
+[34m2019-04-11 15:27:25.674 -03 [committer.txvalidator] Validate -> INFO 038[0m [airlinechannel] Validated block [1] in 2ms
+[34m2019-04-11 15:27:25.674 -03 [cceventmgmt] HandleStateUpdates -> INFO 039[0m Channel [airlinechannel]: Handling deploy or update of chaincode [nodecc]
+[34m2019-04-11 15:27:25.674 -03 [ccprovider] ExtractStatedbArtifactsForChaincode -> INFO 03a[0m Error while loading installation package for ccname=nodecc, ccversion=1.0. Err=open /home/fcosta/peers/acme-peer2/ledger/chaincodes/nodecc.1.0: no such file or directory
+[34m2019-04-11 15:27:25.675 -03 [cceventmgmt] HandleChaincodeDeploy -> INFO 03b[0m Channel [airlinechannel]: Chaincode [Name=nodecc, Version=1.0, Hash=[]byte{0x74, 0x31, 0x61, 0xc7, 0xe5, 0xa7, 0x43, 0x4e, 0xca, 0x7e, 0x0, 0x87, 0x5c, 0x72, 0xcd, 0xfd, 0xa4, 0x60, 0xe, 0x94, 0xf3, 0x5c, 0xee, 0x5, 0x70, 0x5d, 0x80, 0xa8, 0x67, 0x45, 0x6d, 0x95}] is not installed hence no need to create chaincode artifacts for endorsement
+[34m2019-04-11 15:27:25.725 -03 [kvledger] CommitWithPvtData -> INFO 03c[0m [airlinechannel] Committed block [1] with 1 transaction(s) in 50ms (state_validation=0ms block_commit=31ms state_commit=9ms)
+[34m2019-04-11 15:27:25.725 -03 [gossip.privdata] StoreBlock -> INFO 03d[0m [airlinechannel] Received block [2] from buffer
+[34m2019-04-11 15:27:25.726 -03 [committer.txvalidator] Validate -> INFO 03e[0m [airlinechannel] Validated block [2] in 1ms
+[34m2019-04-11 15:27:25.814 -03 [kvledger] CommitWithPvtData -> INFO 03f[0m [airlinechannel] Committed block [2] with 1 transaction(s) in 87ms (state_validation=0ms block_commit=55ms state_commit=22ms)
+[34m2019-04-11 15:27:25.814 -03 [gossip.privdata] StoreBlock -> INFO 040[0m [airlinechannel] Received block [3] from buffer
+[34m2019-04-11 15:27:25.815 -03 [committer.txvalidator] Validate -> INFO 041[0m [airlinechannel] Validated block [3] in 1ms
+[34m2019-04-11 15:27:25.878 -03 [kvledger] CommitWithPvtData -> INFO 042[0m [airlinechannel] Committed block [3] with 1 transaction(s) in 62ms (state_validation=0ms block_commit=44ms state_commit=8ms)
+[34m2019-04-11 15:27:53.603 -03 [endorser] callChaincode -> INFO 043[0m [][b3159395] Entry chaincode: name:"lscc" 
+[34m2019-04-11 15:27:53.604 -03 [lscc] executeInstall -> INFO 044[0m Installed Chaincode [nodecc] Version [1.0] to peer
+[34m2019-04-11 15:27:53.604 -03 [endorser] callChaincode -> INFO 045[0m [][b3159395] Exit chaincode: name:"lscc"  (1ms)
+[34m2019-04-11 15:27:53.604 -03 [comm.grpc.server] 1 -> INFO 046[0m unary call completed {"grpc.start_time": "2019-04-11T15:27:53.602-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56870", "grpc.code": "OK", "grpc.call_duration": "2.114853ms"}
+[34m2019-04-11 15:27:53.692 -03 [endorser] callChaincode -> INFO 047[0m [][b804b274] Entry chaincode: name:"lscc" 
+[34m2019-04-11 15:27:53.693 -03 [endorser] callChaincode -> INFO 048[0m [][b804b274] Exit chaincode: name:"lscc"  (1ms)
+[34m2019-04-11 15:27:53.693 -03 [comm.grpc.server] 1 -> INFO 049[0m unary call completed {"grpc.start_time": "2019-04-11T15:27:53.691-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56874", "grpc.code": "OK", "grpc.call_duration": "1.412227ms"}
+[34m2019-04-11 15:28:02.099 -03 [endorser] callChaincode -> INFO 04a[0m [airlinechannel][5719bc71] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 15:28:03.357 -03 [endorser] callChaincode -> INFO 04b[0m [airlinechannel][5719bc71] Exit chaincode: name:"nodecc"  (1259ms)
+[34m2019-04-11 15:28:03.358 -03 [comm.grpc.server] 1 -> INFO 04c[0m unary call completed {"grpc.start_time": "2019-04-11T15:28:02.097-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56878", "grpc.code": "OK", "grpc.call_duration": "1.260870334s"}
+[34m2019-04-11 15:28:03.452 -03 [endorser] callChaincode -> INFO 04d[0m [airlinechannel][5e9e1b13] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 15:28:03.455 -03 [endorser] callChaincode -> INFO 04e[0m [airlinechannel][5e9e1b13] Exit chaincode: name:"nodecc"  (4ms)
+[34m2019-04-11 15:28:03.456 -03 [comm.grpc.server] 1 -> INFO 04f[0m unary call completed {"grpc.start_time": "2019-04-11T15:28:03.451-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56884", "grpc.code": "OK", "grpc.call_duration": "4.95901ms"}
+[34m2019-04-11 15:28:14.495 -03 [endorser] callChaincode -> INFO 050[0m [][2e971ffa] Entry chaincode: name:"cscc" 
+[34m2019-04-11 15:28:14.496 -03 [endorser] callChaincode -> INFO 051[0m [][2e971ffa] Exit chaincode: name:"cscc"  (1ms)
+[34m2019-04-11 15:28:14.496 -03 [comm.grpc.server] 1 -> INFO 052[0m unary call completed {"grpc.start_time": "2019-04-11T15:28:14.494-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56888", "grpc.code": "OK", "grpc.call_duration": "1.253645ms"}
+[34m2019-04-11 15:28:14.511 -03 [endorser] callChaincode -> INFO 053[0m [airlinechannel][cdf11c32] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 15:28:14.516 -03 [endorser] callChaincode -> INFO 054[0m [airlinechannel][cdf11c32] Exit chaincode: name:"nodecc"  (6ms)
+[34m2019-04-11 15:28:14.517 -03 [comm.grpc.server] 1 -> INFO 055[0m unary call completed {"grpc.start_time": "2019-04-11T15:28:14.51-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56888", "grpc.code": "OK", "grpc.call_duration": "6.930981ms"}
+[34m2019-04-11 15:28:16.270 -03 [endorser] callChaincode -> INFO 056[0m [airlinechannel][c429d3f2] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 15:28:16.273 -03 [endorser] callChaincode -> INFO 057[0m [airlinechannel][c429d3f2] Exit chaincode: name:"nodecc"  (3ms)
+[34m2019-04-11 15:28:16.274 -03 [comm.grpc.server] 1 -> INFO 058[0m unary call completed {"grpc.start_time": "2019-04-11T15:28:16.269-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56894", "grpc.code": "OK", "grpc.call_duration": "4.711008ms"}
+[34m2019-04-11 15:28:16.415 -03 [endorser] callChaincode -> INFO 059[0m [airlinechannel][8c9514a7] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 15:28:16.418 -03 [endorser] callChaincode -> INFO 05a[0m [airlinechannel][8c9514a7] Exit chaincode: name:"nodecc"  (3ms)
+[34m2019-04-11 15:28:16.418 -03 [comm.grpc.server] 1 -> INFO 05b[0m unary call completed {"grpc.start_time": "2019-04-11T15:28:16.414-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56898", "grpc.code": "OK", "grpc.call_duration": "4.197997ms"}
+[34m2019-04-11 15:28:16.536 -03 [gossip.privdata] StoreBlock -> INFO 05c[0m [airlinechannel] Received block [4] from buffer
+[34m2019-04-11 15:28:16.537 -03 [committer.txvalidator] Validate -> INFO 05d[0m [airlinechannel] Validated block [4] in 1ms
+[34m2019-04-11 15:28:16.608 -03 [kvledger] CommitWithPvtData -> INFO 05e[0m [airlinechannel] Committed block [4] with 1 transaction(s) in 70ms (state_validation=0ms block_commit=39ms state_commit=22ms)
+[34m2019-04-11 15:42:01.683 -03 [endorser] callChaincode -> INFO 05f[0m [][e698bda8] Entry chaincode: name:"lscc" 
+[31m2019-04-11 15:42:01.684 -03 [discovery.lifecycle] func1 -> ERRO 060[0m Chaincode deploy for nodecc failed
+[34m2019-04-11 15:42:01.684 -03 [endorser] callChaincode -> INFO 061[0m [][e698bda8] Exit chaincode: name:"lscc"  (1ms)
+[31m2019-04-11 15:42:01.684 -03 [endorser] ProcessProposal -> ERRO 062[0m [][e698bda8] simulateProposal() resulted in chaincode name:"lscc"  response status 500 for txid: e698bda87acd5d805ad28934e65d4af7fdedc046d57ef462d58cb104c980c938
+[34m2019-04-11 15:42:01.684 -03 [comm.grpc.server] 1 -> INFO 063[0m unary call completed {"grpc.start_time": "2019-04-11T15:42:01.682-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56906", "grpc.code": "OK", "grpc.call_duration": "1.85517ms"}
+[34m2019-04-11 15:42:01.773 -03 [endorser] callChaincode -> INFO 064[0m [][6114889b] Entry chaincode: name:"lscc" 
+[34m2019-04-11 15:42:01.773 -03 [endorser] callChaincode -> INFO 065[0m [][6114889b] Exit chaincode: name:"lscc"  (1ms)
+[34m2019-04-11 15:42:01.773 -03 [comm.grpc.server] 1 -> INFO 066[0m unary call completed {"grpc.start_time": "2019-04-11T15:42:01.772-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56910", "grpc.code": "OK", "grpc.call_duration": "1.306376ms"}
+[34m2019-04-11 15:42:49.868 -03 [endorser] callChaincode -> INFO 067[0m [][7bf5e90d] Entry chaincode: name:"lscc" 
+[31m2019-04-11 15:42:49.869 -03 [discovery.lifecycle] func1 -> ERRO 068[0m Chaincode deploy for nodecc failed
+[34m2019-04-11 15:42:49.869 -03 [endorser] callChaincode -> INFO 069[0m [][7bf5e90d] Exit chaincode: name:"lscc"  (1ms)
+[31m2019-04-11 15:42:49.869 -03 [endorser] ProcessProposal -> ERRO 06a[0m [][7bf5e90d] simulateProposal() resulted in chaincode name:"lscc"  response status 500 for txid: 7bf5e90d592c0f318c9c26793612ccc3c775de123e678a97b1b1b15b60181d9a
+[34m2019-04-11 15:42:49.869 -03 [comm.grpc.server] 1 -> INFO 06b[0m unary call completed {"grpc.start_time": "2019-04-11T15:42:49.868-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56918", "grpc.code": "OK", "grpc.call_duration": "1.766891ms"}
+[34m2019-04-11 15:42:49.987 -03 [endorser] callChaincode -> INFO 06c[0m [][755358f1] Entry chaincode: name:"lscc" 
+[34m2019-04-11 15:42:49.987 -03 [endorser] callChaincode -> INFO 06d[0m [][755358f1] Exit chaincode: name:"lscc"  (1ms)
+[34m2019-04-11 15:42:49.987 -03 [comm.grpc.server] 1 -> INFO 06e[0m unary call completed {"grpc.start_time": "2019-04-11T15:42:49.986-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56922", "grpc.code": "OK", "grpc.call_duration": "1.210726ms"}
+[34m2019-04-11 15:42:54.011 -03 [endorser] callChaincode -> INFO 06f[0m [airlinechannel][4f080372] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 15:42:54.015 -03 [endorser] callChaincode -> INFO 070[0m [airlinechannel][4f080372] Exit chaincode: name:"nodecc"  (5ms)
+[34m2019-04-11 15:42:54.016 -03 [comm.grpc.server] 1 -> INFO 071[0m unary call completed {"grpc.start_time": "2019-04-11T15:42:54.01-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56926", "grpc.code": "OK", "grpc.call_duration": "5.988951ms"}
+[34m2019-04-11 15:42:54.108 -03 [endorser] callChaincode -> INFO 072[0m [airlinechannel][e4e353df] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 15:42:54.118 -03 [endorser] callChaincode -> INFO 073[0m [airlinechannel][e4e353df] Exit chaincode: name:"nodecc"  (10ms)
+[34m2019-04-11 15:42:54.118 -03 [comm.grpc.server] 1 -> INFO 074[0m unary call completed {"grpc.start_time": "2019-04-11T15:42:54.107-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56930", "grpc.code": "OK", "grpc.call_duration": "11.021ms"}
+[34m2019-04-11 15:43:16.012 -03 [endorser] callChaincode -> INFO 075[0m [][e084af45] Entry chaincode: name:"lscc" 
+[31m2019-04-11 15:43:16.013 -03 [discovery.lifecycle] func1 -> ERRO 076[0m Chaincode deploy for nodecc failed
+[34m2019-04-11 15:43:16.013 -03 [endorser] callChaincode -> INFO 077[0m [][e084af45] Exit chaincode: name:"lscc"  (1ms)
+[31m2019-04-11 15:43:16.013 -03 [endorser] ProcessProposal -> ERRO 078[0m [][e084af45] simulateProposal() resulted in chaincode name:"lscc"  response status 500 for txid: e084af45d9a887a0ba227b54cd6bf1783145a28d7b61d421761149791bada769
+[34m2019-04-11 15:43:16.013 -03 [comm.grpc.server] 1 -> INFO 079[0m unary call completed {"grpc.start_time": "2019-04-11T15:43:16.011-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56934", "grpc.code": "OK", "grpc.call_duration": "1.775073ms"}
+[34m2019-04-11 15:43:16.100 -03 [endorser] callChaincode -> INFO 07a[0m [][87342c08] Entry chaincode: name:"lscc" 
+[34m2019-04-11 15:43:16.101 -03 [endorser] callChaincode -> INFO 07b[0m [][87342c08] Exit chaincode: name:"lscc"  (1ms)
+[34m2019-04-11 15:43:16.101 -03 [comm.grpc.server] 1 -> INFO 07c[0m unary call completed {"grpc.start_time": "2019-04-11T15:43:16.1-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56938", "grpc.code": "OK", "grpc.call_duration": "1.236972ms"}
+[34m2019-04-11 15:43:22.957 -03 [endorser] callChaincode -> INFO 07d[0m [airlinechannel][d8ebe20d] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 15:43:22.960 -03 [endorser] callChaincode -> INFO 07e[0m [airlinechannel][d8ebe20d] Exit chaincode: name:"nodecc"  (3ms)
+[34m2019-04-11 15:43:22.960 -03 [comm.grpc.server] 1 -> INFO 07f[0m unary call completed {"grpc.start_time": "2019-04-11T15:43:22.956-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56942", "grpc.code": "OK", "grpc.call_duration": "4.376816ms"}
+[34m2019-04-11 15:43:23.050 -03 [endorser] callChaincode -> INFO 080[0m [airlinechannel][2db13a60] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 15:43:23.053 -03 [endorser] callChaincode -> INFO 081[0m [airlinechannel][2db13a60] Exit chaincode: name:"nodecc"  (2ms)
+[34m2019-04-11 15:43:23.053 -03 [comm.grpc.server] 1 -> INFO 082[0m unary call completed {"grpc.start_time": "2019-04-11T15:43:23.049-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56946", "grpc.code": "OK", "grpc.call_duration": "3.628169ms"}
+[34m2019-04-11 15:45:18.329 -03 [endorser] callChaincode -> INFO 083[0m [][6a793a02] Entry chaincode: name:"lscc" 
+[31m2019-04-11 15:45:18.329 -03 [discovery.lifecycle] func1 -> ERRO 084[0m Chaincode deploy for nodecc failed
+[34m2019-04-11 15:45:18.330 -03 [endorser] callChaincode -> INFO 085[0m [][6a793a02] Exit chaincode: name:"lscc"  (1ms)
+[31m2019-04-11 15:45:18.330 -03 [endorser] ProcessProposal -> ERRO 086[0m [][6a793a02] simulateProposal() resulted in chaincode name:"lscc"  response status 500 for txid: 6a793a02e0c874e2f9f15202115080277fc0f91361c2cac79b27d30ca7257856
+[34m2019-04-11 15:45:18.330 -03 [comm.grpc.server] 1 -> INFO 087[0m unary call completed {"grpc.start_time": "2019-04-11T15:45:18.328-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56950", "grpc.code": "OK", "grpc.call_duration": "1.800872ms"}
+[34m2019-04-11 15:45:18.436 -03 [endorser] callChaincode -> INFO 088[0m [][e477abff] Entry chaincode: name:"lscc" 
+[34m2019-04-11 15:45:18.437 -03 [endorser] callChaincode -> INFO 089[0m [][e477abff] Exit chaincode: name:"lscc"  (1ms)
+[34m2019-04-11 15:45:18.437 -03 [comm.grpc.server] 1 -> INFO 08a[0m unary call completed {"grpc.start_time": "2019-04-11T15:45:18.436-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56954", "grpc.code": "OK", "grpc.call_duration": "1.214851ms"}
+[34m2019-04-11 15:45:31.207 -03 [endorser] callChaincode -> INFO 08b[0m [airlinechannel][a2b7fbe3] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 15:45:31.211 -03 [endorser] callChaincode -> INFO 08c[0m [airlinechannel][a2b7fbe3] Exit chaincode: name:"nodecc"  (4ms)
+[34m2019-04-11 15:45:31.212 -03 [comm.grpc.server] 1 -> INFO 08d[0m unary call completed {"grpc.start_time": "2019-04-11T15:45:31.206-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56958", "grpc.code": "OK", "grpc.call_duration": "5.888774ms"}
+[34m2019-04-11 15:45:31.358 -03 [endorser] callChaincode -> INFO 08e[0m [airlinechannel][77fc6b49] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 15:45:31.362 -03 [endorser] callChaincode -> INFO 08f[0m [airlinechannel][77fc6b49] Exit chaincode: name:"nodecc"  (3ms)
+[34m2019-04-11 15:45:31.362 -03 [comm.grpc.server] 1 -> INFO 090[0m unary call completed {"grpc.start_time": "2019-04-11T15:45:31.357-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:56962", "grpc.code": "OK", "grpc.call_duration": "4.617443ms"}
+[34m2019-04-11 16:09:44.791 -03 [gossip.privdata] StoreBlock -> INFO 091[0m [airlinechannel] Received block [5] from buffer
+[34m2019-04-11 16:09:44.795 -03 [committer.txvalidator] Validate -> INFO 092[0m [airlinechannel] Validated block [5] in 4ms
+[34m2019-04-11 16:09:44.846 -03 [kvledger] CommitWithPvtData -> INFO 093[0m [airlinechannel] Committed block [5] with 1 transaction(s) in 50ms (state_validation=0ms block_commit=32ms state_commit=9ms)
+[34m2019-04-11 16:10:34.424 -03 [endorser] callChaincode -> INFO 094[0m [airlinechannel][202b8c40] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 16:10:34.428 -03 [endorser] callChaincode -> INFO 095[0m [airlinechannel][202b8c40] Exit chaincode: name:"nodecc"  (3ms)
+[34m2019-04-11 16:10:34.428 -03 [comm.grpc.server] 1 -> INFO 096[0m unary call completed {"grpc.start_time": "2019-04-11T16:10:34.423-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:57068", "grpc.code": "OK", "grpc.call_duration": "5.322543ms"}
+[34m2019-04-11 16:10:34.513 -03 [endorser] callChaincode -> INFO 097[0m [airlinechannel][5f856e6d] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 16:10:34.516 -03 [endorser] callChaincode -> INFO 098[0m [airlinechannel][5f856e6d] Exit chaincode: name:"nodecc"  (3ms)
+[34m2019-04-11 16:10:34.517 -03 [comm.grpc.server] 1 -> INFO 099[0m unary call completed {"grpc.start_time": "2019-04-11T16:10:34.512-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:57072", "grpc.code": "OK", "grpc.call_duration": "4.247598ms"}
+[34m2019-04-11 16:10:41.159 -03 [endorser] callChaincode -> INFO 09a[0m [][a012eec0] Entry chaincode: name:"cscc" 
+[34m2019-04-11 16:10:41.159 -03 [endorser] callChaincode -> INFO 09b[0m [][a012eec0] Exit chaincode: name:"cscc"  (1ms)
+[34m2019-04-11 16:10:41.159 -03 [comm.grpc.server] 1 -> INFO 09c[0m unary call completed {"grpc.start_time": "2019-04-11T16:10:41.158-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:57076", "grpc.code": "OK", "grpc.call_duration": "1.252031ms"}
+[34m2019-04-11 16:10:41.169 -03 [endorser] callChaincode -> INFO 09d[0m [airlinechannel][0427eecd] Entry chaincode: name:"nodecc" 
+[34m2019-04-11 16:10:41.173 -03 [endorser] callChaincode -> INFO 09e[0m [airlinechannel][0427eecd] Exit chaincode: name:"nodecc"  (5ms)
+[34m2019-04-11 16:10:41.174 -03 [comm.grpc.server] 1 -> INFO 09f[0m unary call completed {"grpc.start_time": "2019-04-11T16:10:41.168-03:00", "grpc.service": "protos.Endorser", "grpc.method": "ProcessProposal", "grpc.peer_address": "127.0.0.1:57076", "grpc.code": "OK", "grpc.call_duration": "5.807834ms"}
+[34m2019-04-11 16:10:43.193 -03 [gossip.privdata] StoreBlock -> INFO 0a0[0m [airlinechannel] Received block [6] from buffer
+[34m2019-04-11 16:10:43.194 -03 [committer.txvalidator] Validate -> INFO 0a1[0m [airlinechannel] Validated block [6] in 0ms
+[34m2019-04-11 16:10:43.253 -03 [kvledger] CommitWithPvtData -> INFO 0a2[0m [airlinechannel] Committed block [6] with 1 transaction(s) in 58ms (state_validation=0ms block_commit=40ms state_commit=9ms)
