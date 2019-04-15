@@ -3,7 +3,7 @@
     "composer": "^0.20.7"
   },
   "name": "testfabric-bna",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sample Test for fabric multi-org setup",
   "scripts": {
     "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/testfabric-bna.bna",
