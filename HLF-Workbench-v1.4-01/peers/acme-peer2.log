@@ -169,3 +169,9 @@
 [34m2019-04-11 16:10:43.193 -03 [gossip.privdata] StoreBlock -> INFO 0a0[0m [airlinechannel] Received block [6] from buffer
 [34m2019-04-11 16:10:43.194 -03 [committer.txvalidator] Validate -> INFO 0a1[0m [airlinechannel] Validated block [6] in 0ms
 [34m2019-04-11 16:10:43.253 -03 [kvledger] CommitWithPvtData -> INFO 0a2[0m [airlinechannel] Committed block [6] with 1 transaction(s) in 58ms (state_validation=0ms block_commit=40ms state_commit=9ms)
+[34m2019-04-15 09:30:24.866 -03 [gossip.privdata] StoreBlock -> INFO 0a3[0m [airlinechannel] Received block [7] from buffer
+[34m2019-04-15 09:30:24.869 -03 [committer.txvalidator] Validate -> INFO 0a4[0m [airlinechannel] Validated block [7] in 3ms
+[34m2019-04-15 09:30:24.871 -03 [cceventmgmt] HandleStateUpdates -> INFO 0a5[0m Channel [airlinechannel]: Handling deploy or update of chaincode [testfabric-bna]
+[34m2019-04-15 09:30:24.871 -03 [ccprovider] ExtractStatedbArtifactsForChaincode -> INFO 0a6[0m Error while loading installation package for ccname=testfabric-bna, ccversion=0.0.1. Err=open /home/fcosta/peers/acme-peer2/ledger/chaincodes/testfabric-bna.0.0.1: no such file or directory
+[34m2019-04-15 09:30:24.871 -03 [cceventmgmt] HandleChaincodeDeploy -> INFO 0a7[0m Channel [airlinechannel]: Chaincode [Name=testfabric-bna, Version=0.0.1, Hash=[]byte{0xe8, 0xcb, 0x52, 0xe, 0xd1, 0xd, 0xb0, 0x59, 0x91, 0xbb, 0xe4, 0x5a, 0xf6, 0xc3, 0x7a, 0x6f, 0x13, 0x1c, 0xce, 0x23, 0xd3, 0xcb, 0x9f, 0xc9, 0x6a, 0xfd, 0x3a, 0x1f, 0x2d, 0x0, 0x4e, 0x9c}] is not installed hence no need to create chaincode artifacts for endorsement
+[34m2019-04-15 09:30:25.074 -03 [kvledger] CommitWithPvtData -> INFO 0a8[0m [airlinechannel] Committed block [7] with 1 transaction(s) in 204ms (state_validation=1ms block_commit=122ms state_commit=20ms)
